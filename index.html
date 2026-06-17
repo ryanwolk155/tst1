@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<title>OJA ENGENHARIA LTDA</title>
+<meta name="description" content="Site oficial da Oja Engenharia LTDA - Construção, engenharia e serviços especializados em Lauro de Freitas, BA.">
+<meta property="og:title" content="OJA ENGENHARIA LTDA">
+<meta property="og:description" content="Construção, engenharia e serviços especializados em Lauro de Freitas, BA.">
+<meta property="og:type" content="website">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; background: #f5f5f5; color: #222; }
+
+  /* HEADER */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px 30px;
+    border-bottom: 4px solid #f5a623;
+  }
+  .header .logo-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f5a623;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #1a1a2e;
+    letter-spacing: 1px;
+  }
+  .header h1 { font-size: 22px; font-weight: bold; letter-spacing: 1px; margin-bottom: 6px; }
+  .header .cnpj { font-size: 14px; color: #f5a623; letter-spacing: 2px; }
+
+  /* LOGIN LABEL */
+  .login-label {
+    background: #1a1a2e;
+    text-align: center;
+    padding: 8px;
+    color: #aaa;
+    font-size: 13px;
+    border-bottom: 1px solid #333;
+  }
+
+  /* SECTION */
+  .section {
+    max-width: 800px;
+    margin: 28px auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 28px 28px 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  }
+  .section h2 {
+    font-size: 18px;
+    color: #1a1a2e;
+    border-left: 4px solid #f5a623;
+    padding-left: 12px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .section p { font-size: 15px; line-height: 1.75; color: #333; margin-bottom: 10px; }
+
+  /* MISSÃO */
+  .missao {
+    background: #1a1a2e;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 32px 24px;
+    margin: 0;
+  }
+  .missao h2 { color: #f5a623; font-size: 16px; letter-spacing: 2px; margin-bottom: 14px; }
+  .missao p { font-size: 15px; line-height: 1.8; max-width: 680px; margin: 0 auto; }
+
+  /* IMAGEM DESTAQUE */
+  .hero-img {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 24px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #dde4ee;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: #1a1a2e;
+  }
+
+  /* CONTATO BAR */
+  .contato-bar {
+    background: #f5a623;
+    color: #1a1a2e;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  .contato-bar a { color: #1a1a2e; text-decoration: none; }
+
+  /* SERVICES LIST */
+  .services-list { list-style: none; padding: 0; }
+  .services-list li {
+    padding: 7px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .services-list li:last-child { border-bottom: none; }
+  .services-list li::before { content: "✔"; color: #f5a623; font-weight: bold; font-size: 13px; }
+
+  /* INFO TABLE */
+  .info-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .info-table tr { border-bottom: 1px solid #f0f0f0; }
+  .info-table tr:last-child { border-bottom: none; }
+  .info-table td { padding: 7px 4px; color: #333; }
+  .info-table td:first-child { color: #666; width: 52%; }
+  .info-table td:last-child { font-weight: 600; color: #1a1a2e; }
+
+  /* CTA WHATSAPP */
+  .cta-wrap { text-align: center; padding: 28px 16px; }
+  .cta-btn {
+    display: inline-block;
+    background: #25d366;
+    color: #fff;
+    padding: 14px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background 0.2s;
+  }
+  .cta-btn:hover { background: #1da851; }
+
+  /* INSTAGRAM */
+  .insta-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #fff;
+    padding: 10px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #1a1a2e;
+    color: #bbb;
+    padding: 32px 24px;
+    font-size: 13px;
+    line-height: 2;
+  }
+  footer .footer-inner { max-width: 800px; margin: 0 auto; }
+  footer h3 { color: #f5a623; font-size: 14px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+  footer p { margin-bottom: 4px; }
+  footer .copy { margin-top: 20px; border-top: 1px solid #333; padding-top: 14px; color: #777; font-size: 12px; }
+
+  /* POLITICA */
+  .politica {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px 28px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    font-size: 13px;
+    color: #555;
+    line-height: 1.75;
+  }
+  .politica h3 { font-size: 15px; color: #1a1a2e; margin: 16px 0 6px; }
+  .politica h2 { font-size: 17px; color: #1a1a2e; border-left: 4px solid #f5a623; padding-left: 10px; margin-bottom: 14px; text-transform: uppercase; }
+
+  @media (max-width: 600px) {
+    .section, .politica { margin: 16px 12px; padding: 18px 16px; }
+    .header h1 { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- LOGIN LABEL -->
+<div class="login-label">LOGIN</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo-circle">OJA</div>
+  <h1>OJA ENGENHARIA LTDA</h1>
+  <div class="cnpj">38.412.232/0001-20</div>
+</header>
+
+<!-- MISSÃO -->
+<div class="missao">
+  <h2>NOSSA MISSÃO:</h2>
+  <p><strong>Entregar soluções de engenharia com excelência técnica, responsabilidade e inovação, construindo obras e relacionamentos sólidos com nossos clientes, parceiros e comunidade em Lauro de Freitas e região.</strong></p>
+</div>
+
+<!-- CONTATO BAR -->
+<div class="contato-bar">
+  📞 CONTATO &nbsp;|&nbsp; E-mail: contato@ojaengenharia.com.br
+</div>
+
+<!-- INSTAGRAM BTN -->
+<div style="text-align:center; padding: 12px;">
+  <a href="#" class="insta-btn">📷 INSTAGRAM</a>
+</div>
+
+<!-- QUEM SOMOS -->
+<div class="section">
+  <h2>Quem Somos?</h2>
+  <p>
+    A <strong>OJA ENGENHARIA LTDA</strong>, registrada sob o CNPJ 38.412.232/0001-20, foi fundada em 10 de setembro de 2020, em Lauro de Freitas - BA. Desde sua abertura, a empresa se consolida como referência em construção civil, engenharia e serviços especializados na Bahia.
+  </p>
+  <p>
+    Localizada na Rua Gilvan Fernandes, 188, Emp. Norte Center Loja 07, Bairro Recreio Ipitanga, Lauro de Freitas - BA, a Oja Engenharia atua com foco na excelência, segurança e qualidade em cada projeto. Nossos valores incluem comprometimento técnico, ética nas relações e respeito ao prazo e ao cliente.
+  </p>
+  <p>
+    Com um capital social de R$ 1.200.000,00 e optante pelo Simples Nacional, a empresa mantém saúde financeira e capacidade de execução para projetos de pequeno, médio e grande porte.
+  </p>
+
+  <h2 style="margin-top: 22px;">Produtos e Serviços Disponíveis:</h2>
+  <ul class="services-list">
+    <li>Construção de edifícios</li>
+    <li>Serviços de engenharia</li>
+    <li>Instalação e manutenção elétrica</li>
+    <li>Outras obras de acabamento da construção</li>
+    <li>Montagem e desmontagem de andaimes e estruturas temporárias</li>
+    <li>Instalações de sistema de prevenção contra incêndio</li>
+    <li>Impermeabilização em obras de engenharia civil</li>
+    <li>Demolição de edifícios e outras estruturas</li>
+    <li>Obras de terraplenagem</li>
+    <li>Instalações hidráulicas, sanitárias e de gás</li>
+    <li>Instalação e manutenção de sistemas de ar condicionado, ventilação e refrigeração</li>
+    <li>Obras de alvenaria</li>
+    <li>Obras de urbanização — ruas, praças e calçadas</li>
+    <li>Aluguel de máquinas e equipamentos para construção sem operador</li>
+    <li>Locação de automóveis sem condutor</li>
+    <li>Obras de fundações</li>
+    <li>Administração de obras</li>
+    <li>Preparação de canteiro e limpeza de terreno</li>
+    <li>Construção de redes de abastecimento de água e coleta de esgoto</li>
+  </ul>
+
+  <h2 style="margin-top: 22px;">Informações da Empresa:</h2>
+  <table class="info-table">
+    <tr><td>Razão Social</td><td>OJA ENGENHARIA LTDA</td></tr>
+    <tr><td>Nome Fantasia</td><td>OJA ENGENHARIA</td></tr>
+    <tr><td>CNPJ</td><td>38.412.232/0001-20</td></tr>
+    <tr><td>Data de Abertura</td><td>10/09/2020</td></tr>
+    <tr><td>Porte</td><td>MICRO EMPRESA</td></tr>
+    <tr><td>Natureza Jurídica</td><td>Sociedade Empresária Limitada</td></tr>
+    <tr><td>Simples Nacional</td><td>Sim (desde 01/01/2026)</td></tr>
+    <tr><td>Situação Cadastral</td><td>Ativa</td></tr>
+    <tr><td>Tipo</td><td>Matriz</td></tr>
+    <tr><td>Capital Social</td><td>R$ 1.200.000,00</td></tr>
+  </table>
+
+  <h2 style="margin-top: 22px;">Localização e Contato:</h2>
+  <table class="info-table">
+    <tr><td>Endereço</td><td>Rua Gilvan Fernandes, 188, Emp. Norte Center Loja 07, Recreio Ipitanga, Lauro de Freitas - BA, CEP 42700-530</td></tr>
+    <tr><td>E-mail</td><td>contato@ojaengenharia.com.br</td></tr>
+  </table>
+</div>
+
+<!-- CTA WHATSAPP -->
+<div class="cta-wrap">
+  <p style="margin-bottom: 14px; font-size: 15px; color: #444;">Fale comigo:</p>
+  <a class="cta-btn" href="https://wa.me/5571900000000?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">
+    💬 CONVERSAR AGORA
+  </a>
+</div>
+
+<!-- POLÍTICA DE PRIVACIDADE -->
+<div class="politica">
+  <h2>Política de Privacidade</h2>
+  <p><strong>OJA ENGENHARIA LTDA &nbsp;|&nbsp; CNPJ: 38.412.232/0001-20</strong><br>
+  Endereço: Rua Gilvan Fernandes, 188, Emp. Norte Center Loja 07, Recreio Ipitanga, Lauro de Freitas - BA, CEP 42700-530</p>
+
+  <h3>1. Finalidade</h3>
+  <p>Esta política descreve como coletamos, utilizamos, armazenamos e protegemos os dados pessoais dos clientes, usuários e visitantes que interagem conosco por meio de nossos serviços digitais, portais, e-mail, telefone, redes sociais ou durante a prestação de serviços contratados.</p>
+
+  <h3>2. Dados Coletados</h3>
+  <p>Informações fornecidas voluntariamente: Nome, e-mail, telefone, endereço, dados da empresa e informações necessárias para a execução dos serviços contratados. Dados técnicos e de navegação: Endereço IP, tipo de dispositivo, páginas acessadas e interações em nossos portais online, quando aplicável.</p>
+
+  <h3>3. Uso dos Dados</h3>
+  <p>Prestação, gerenciamento e melhoria dos serviços contratados. Comunicação relacionada a serviços, suporte técnico, atualizações e faturamento. Cumprimento de obrigações legais e regulatórias.</p>
+
+  <h3>4. Compartilhamento de Dados</h3>
+  <p>Não comercializamos ou compartilhamos dados pessoais com terceiros para fins publicitários não autorizados. Podemos compartilhar dados com parceiros técnicos exclusivamente para execução dos serviços, ou com autoridades legais mediante requisição formal.</p>
+
+  <h3>5. Direitos do Titular (LGPD)</h3>
+  <p>Você tem direito a acessar, corrigir ou atualizar seus dados pessoais; solicitar a exclusão dos dados; revogar o consentimento para uso de dados; e solicitar portabilidade de dados para outro fornecedor de serviço.</p>
+
+  <h3>6. Segurança e Armazenamento</h3>
+  <p>Implementamos medidas técnicas e administrativas para proteger os dados contra acesso não autorizado, alteração ou destruição. Informações sensíveis são tratadas com protocolos de criptografia e acesso restrito.</p>
+
+  <h3>7. Alterações nesta Política</h3>
+  <p>Esta política pode ser atualizada periodicamente. Alterações serão comunicadas por nossos canais oficiais.</p>
+
+  <h3>8. Contato para Privacidade</h3>
+  <p>E-mail: contato@ojaengenharia.com.br<br>
+  Endereço postal: Rua Gilvan Fernandes, 188, Emp. Norte Center Loja 07, Recreio Ipitanga, Lauro de Freitas - BA, CEP 42700-530</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <h3>Rodapé &amp; Informações</h3>
+    <p>OJA ENGENHARIA LTDA</p>
+    <p>CNPJ: 38.412.232/0001-20</p>
+    <p>Razão Social: OJA ENGENHARIA LTDA</p>
+    <p>Nome Fantasia: OJA ENGENHARIA</p>
+    <p>Data de Abertura: 10/09/2020</p>
+    <p>Porte: MICRO EMPRESA</p>
+    <p>Natureza Jurídica: Sociedade Empresária Limitada</p>
+    <p>Situação Cadastral: Ativa</p>
+    <p>Tipo: Matriz</p>
+    <p>Capital Social: R$ 1.200.000,00</p>
+    <p>Endereço: Rua Gilvan Fernandes, 188, Emp. Norte Center Loja 07, Recreio Ipitanga, Lauro de Freitas - BA, CEP 42700-530</p>
+    <p>E-mail: contato@ojaengenharia.com.br</p>
+    <div class="copy">© 2026 OJA ENGENHARIA LTDA. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+</body>
+</html>
